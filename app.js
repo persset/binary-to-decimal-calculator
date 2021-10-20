@@ -1,3 +1,4 @@
+"use strict";
 function Bin2Dec() {
     var binary = document.getElementById("input_bin").value;
     var decimal = 0;
