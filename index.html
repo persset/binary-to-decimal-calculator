@@ -9,21 +9,24 @@
     <title>Bin2Dec</title>
   </head>
   <body>
-    <main>
+    <main id ="main-content" class=container>
       <h1 id="title">Binary to Decimal Converter</h1>
 
       <form action="#" id="form-calc">
-        <label for="value">Digite o número binário a ser convertido</label>
+        <label for="value">Calculadora para conversões de números binários para decimais!</label>
         <br />
-        <input inputmode="numeric" type="number" name="bin_value" id="input_bin" pattern="[0-1]*"/>
+        <label for="bin-value">Binário:</label>
+        <input type="text" name="bin-value" id="input-bin"/>
         <br />
+        <label for="dec_value">Decimal:</label>
         <input
-          type="number"
-          name="dec_value"
-          id="input_dec"
+          type="text"
+          name="dec-value"
+          id="input-dec"
           readonly="readonly"
         />
-        <input type="button" onclick="Bin2Dec()" value="Converter"></input>
+        <br>
+        <input type="button" onclick="Bin2Dec()" value="Converter" id="convert-button"></input>
       </form>
     </main>
   </body>

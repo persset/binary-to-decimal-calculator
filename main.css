@@ -1,10 +1,36 @@
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  padding: 50px;
+  width: 50%;
+  max-width: 500px;
+  margin-top: 8%;
+}
+
+#input-bin {
+  margin-top: 40px;
+  margin-left: 8.5px;
+}
+
+#input-dec {
+  margin-top: 40px;
+  margin-left: 2px;
+}
+
+#convert-button {
+  margin-top: 20px;
 }
